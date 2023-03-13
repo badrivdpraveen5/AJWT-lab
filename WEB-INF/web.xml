@@ -1,0 +1,134 @@
+<web-app>
+<servlet>
+    <servlet-name>DefaultServletOverride</servlet-name>
+    <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+    <init-param>
+        <param-name>listings</param-name>
+        <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+   <servlet-name>DefaultServletOverride</servlet-name>
+   <url-pattern>/</url-pattern>
+</servlet-mapping>
+
+<!-- EXPERIMENT-1  -->
+
+<servlet>
+<servlet-name>Exp2</servlet-name>
+<servlet-class>Exp2</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Exp2</servlet-name>
+<url-pattern>/exp1</url-pattern>
+</servlet-mapping>
+
+<!-- EXPERIMENT-2  -->
+<context-param>
+<param-name>databasetype</param-name>
+<param-value>mysql</param-value>
+</context-param>
+<servlet>
+<servlet-name>Exp3</servlet-name>
+<servlet-class>Exp3</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Exp3</servlet-name>
+<url-pattern>/exp2</url-pattern>
+</servlet-mapping>
+
+<!--Experiment-4 -->
+<servlet> 
+ <servlet-name>Exp41</servlet-name> 
+ <servlet-class>Exp41</servlet-class> 
+ <init-param> 
+<param-name>20471A05D7</param-name> 
+<param-value>praveen</param-value> 
+ </init-param> 
+ <init-param> 
+ <param-name>20471A05F0</param-name> 
+ <param-value>chenna</param-value> 
+ </init-param> 
+ <init-param> 
+ <param-name>20471A05E7</param-name> 
+ <param-value>rushi</param-value> 
+ </init-param> 
+ <init-param> 
+ <param-name>20471A05D9</param-name> 
+ <param-value>srikanth</param-value> 
+ </init-param> 
+ <init-param> 
+ <param-name>20471A05H3</param-name> 
+ <param-value>surya</param-value> 
+ </init-param> 
+ </servlet> 
+ <servlet> 
+ <servlet-name>Exp42</servlet-name> 
+ <servlet-class>Exp42</servlet-class> 
+ </servlet> 
+ <servlet-mapping> 
+ <servlet-name>Exp41</servlet-name> 
+ <url-pattern>/exp41</url-pattern> 
+ </servlet-mapping> 
+ <servlet-mapping> 
+ <servlet-name>Exp42</servlet-name> 
+ <url-pattern>/exp42</url-pattern> 
+ </servlet-mapping> 
+ <session-config> 
+ <session-timeout> 
+ 30 
+ </session-timeout> 
+ </session-config> 
+
+<!-- EXPERIMENT-5  -->
+<servlet>
+<servlet-name>Insert5</servlet-name>
+<servlet-class>Insert5</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Insert5</servlet-name>
+<url-pattern>/insert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Select5</servlet-name>
+<servlet-class>Select5</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Select5</servlet-name>
+<url-pattern>/select</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Delete5</servlet-name>
+<servlet-class>Delete5</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Delete5</servlet-name>
+<url-pattern>/del</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>Search5</servlet-name>
+<servlet-class>Search5</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Search5</servlet-name>
+<url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Update5</servlet-name>
+<servlet-class>Update5</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Update5</servlet-name>
+<url-pattern>/upd</url-pattern>
+</servlet-mapping>
+
+</web-app>
