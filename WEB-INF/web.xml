@@ -21,7 +21,7 @@
 </servlet>
 <servlet-mapping>
 <servlet-name>Exp2</servlet-name>
-<url-pattern>/exp0</url-pattern>
+<url-pattern>/exp1</url-pattern>
 </servlet-mapping>
 
 <!-- EXPERIMENT-2  -->
